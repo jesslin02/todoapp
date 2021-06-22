@@ -1,6 +1,7 @@
 package com.example.todoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -35,5 +36,12 @@ public class MainActivity extends AppCompatActivity {
         items.add("Buy milk");
         items.add("Go to the gym");
         items.add("Check email");
+
+        ItemsAdapter itemsAdapter = new ItemsAdapter(items);
+        rvItems.setAdapter(itemsAdapter);
+
+        /* makes UI items  vertical by default */
+        rvItems.setLayoutManager(new LinearLayoutManager(this));
+
     }
 }
