@@ -13,11 +13,19 @@ import java.util.List;
 /* responsible for taking data from the model (list of strings)
 and displaying it in a row in the recycler view */
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> {
+
+    public interface OnLongClickListener {
+        void onItemLongClicked(int position);
+    }
+
     /* items in our to-do list */
     List<String> items;
+    /* reference to main activity class for deletion functionality */
+    OnLongClickListener longClickListener;
 
-    public ItemsAdapter(List<String> items) {
+    public ItemsAdapter(List<String> items, OnLongClickListener longClickListener) {
         this.items = items;
+        this.longClickListener = longClickListener;
     }
 
     @NonNull
@@ -57,6 +65,15 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
         /* updates the view inside of the View Holder with the item */
         public void bind(String item) {
             tvItem.setText(item);
+            tvItem.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    // notifies longClickListener (inside MainActivity) the position of
+                    // the item that needs to be deleted
+                    longClickListener.onItemLongClicked(getAdapterPosition());
+                    return false;
+                }
+            });
         }
     }
 
