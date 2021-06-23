@@ -24,7 +24,8 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a [walkthrough](https://imgur.com/a/nwl3XXF) of implemented user stories:
+Here's a [walkthrough](https://imgur.com/a/nwl3XXF) of implemented user stories. There are short
+videos for adding and removing tasks, as well as a video demonstrating persistence of tasks.
 
 ## Notes
 
