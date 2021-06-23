@@ -26,7 +26,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/nwl3XXF' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+<img src='https://imgur.com/9p1f5ZA' title='Add Demo' width='' alt='Add Demo' />
+
+<img src='https://imgur.com/PE46U7N' title='Remove Demo' width='' alt='Remove Demo' />
+
+<img src='https://imgur.com/XVO3ZnJ' title='Persistence Demo' width='' alt='Persistence Demo' />
 
 ## Notes
 
