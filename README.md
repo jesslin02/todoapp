@@ -32,11 +32,13 @@ GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Challenges:
+* using the design tools in android studio for the first time (still don't really know how it works)
+* confusion about how the recycler view, adapter, and view holder interact with each other
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2021 Jessica Lin
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
