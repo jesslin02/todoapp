@@ -36,6 +36,10 @@ Challenges:
 * using the design tools in android studio for the first time (still don't really know how it works)
 * confusion about how the recycler view, adapter, and view holder interact with each other
 
+Action Items:
+* review the walkthrough videos
+* explore the additional materials that introduce android development more thoroughly
+
 ## License
 
     Copyright 2021 Jessica Lin
